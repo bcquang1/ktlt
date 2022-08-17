@@ -50,21 +50,21 @@ int main()
         printf("\n");
     }
     printf("Nhap vao gia tri k can tim kiem:");scanf("%d", &k);
-    f=0;
+    bool check=False;
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
             if (A[i][j]==k){
-                f++;
+                check=True;
                 printf ("Vi tri cua phan tu co gia tri = k la A[%d][%d]\n", i+1,j+1);}
             if (B[i][j]==k){
-                f++;
+                check=True;
                 printf ("Vi tri cua phan tu co gia tri = k la B[%d][%d]\n", i+1,j+1);}
             if (C[i][j]==k){
-                f++;
+                check=True;
                 printf ("Vi tri cua phan tu co gia tri = k la C[%d][%d]\n", i+1,j+1);}
         }
     }
-    if (f==0)    
+    if (check==False)    
         printf("Khong tim thay");
 return (0);    
 }
