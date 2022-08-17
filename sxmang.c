@@ -10,7 +10,8 @@ int main()
 	scanf("%d", &n);
     printf("Nhap gia tri cua mang: \n");
     for(i=0; i<n; i++){
-        printf("c[%d]=", i+1);scanf("%d", &c[i]);}
+        printf("c[%d]=", i+1);scanf("%d", &c[i]);
+    }
     j=0;
     for(i=0; i<n; i++){
         if(c[i]%2==1){
@@ -29,9 +30,11 @@ int main()
         }
     printf("Mang sau khi sap xep la:\n");
     for(j=0;j<k;j++){
-        printf("%d ", a[j]);}
+        printf("%d ", a[j]);
+    }
     for(z=0;z<h;z++){
-        printf("%d ", b[z]);}
+        printf("%d ", b[z]);
+    }
 
 
     return 0;
