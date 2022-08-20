@@ -5,7 +5,7 @@ void main()
 {
     int n;
     int rem,reverse=0;
-    printf("Hay nhap cac chu so:");
+    printf("Hay nhap chu so:");
     scanf("%d", &n);
 
 while (n!=0)
