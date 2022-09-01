@@ -50,22 +50,22 @@ int main()
         printf("\n");
     }
     printf("Nhap vao gia tri k can tim kiem:");scanf("%d", &k);
-	f=0;
+	check = True;
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
             if (A[i][j]==k){
-            	f++;
+            	check = False;
                 printf ("Vi tri cua phan tu co gia tri = %d la A[%d][%d]\n", k,i+1,j+1);}
-			if (B[i][j]==k){
-				f++;
+		if (B[i][j]==k){
+			check = False;
 		        printf ("Vi tri cua phan tu co gia tri = %d la B[%d][%d]\n", k,i+1,j+1);}
-			if (C[i][j]==k){
-				f++;
+		if (C[i][j]==k){
+			check = False;
                 printf ("Vi tri cua phan tu co gia tri = %d la C[%d][%d]\n", k,i+1,j+1);}
         }
     }
-    if (f==0)    
+    if (check==True)    
 		printf("Khong tim thay");
-return (0);    
+return 0;    
 }
 
